@@ -1,0 +1,22 @@
+airquality<-datasets::airquality
+head(airquality)
+tail(airquality)
+airquality[ ,c(1,2)]
+airquality$Ozone
+summary(airquality$Temp)
+summary(airquality)
+plot(airquality$Ozone)
+plot(airquality$Ozone,airquality$Temp)
+plot(airquality)
+plot(airquality$Ozone,type="b")
+barplot(airquality$Ozone,col='blue',xlab='Ozone',ylab='Frequency',main='Barchart')
+hist(airquality$Ozone,col='red',main='histogram')
+boxplot(airquality[ ,(1:4)],main='Multiple boxplots')
+par(mfrow=c(3,3),mar=c(2,5,2,1),las=0,bty="n")
+plot(airquality$Ozone)
+plot(airquality$Ozone,airquality$Temp)
+plot(airquality)
+plot(airquality$Ozone,type="b")
+barplot(airquality$Ozone,col='blue',xlab='Ozone',ylab='Frequency',main='Barchart')
+hist(airquality$Ozone,col='red',main='histogram')
+boxplot(airquality[ ,(1:4)],main='Multiple boxplots')

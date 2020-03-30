@@ -1,0 +1,12 @@
+install.packages('nycflights13')
+library(nycflights13)
+no
+library(gmodels)
+data<-nycflights13::flights
+view(data)
+dep_delay<-data$dep_delay
+ar_delay<-data$arr_delay
+dep_delay1<-dep_delay[!is.na(dep_delay)]
+ci(dep_delay1)
+ar_delay<-ar_delay[!is.na(ar_delay)]
+ci(ar_delay)

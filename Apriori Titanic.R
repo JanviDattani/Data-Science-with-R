@@ -1,0 +1,23 @@
+#Association Rules
+install.packages("arules")
+library(arules)
+Titanic<-read.csv("/Volumes/Data/Course Content/DS content/A.Rules/Titanic.csv")
+Titanic<-Titanic[,-c(1)]
+rules <- apriori(Titanic)
+arules::inspect(rules)
+rules.sorted <- sort(rules, by="lift")
+arules::inspect(rules.sorted)
+# rules with rhs containing "Survived" only
+rules <- apriori(Titanic,parameter = list(supp=0.1, conf=0.5)
+#Association Rules
+install.packages("arules")
+library(arules)
+Titanic<-read.csv("/Volumes/Data/Course Content/DS content/A.Rules/Titanic.csv")((Titanic<-Titanic[,-c(1)](rules <- apriori(Titanic)(arules::inspect(rules)(rules.sorted <- sort(rules, by="lift")(arules::inspect(rules.sorted)((# rules with rhs containing "Survived" only(                 ,appearance = list(rhs=c("Survived=No", "Survived=Yes")
+#Association Rules
+install.packages("arules")
+library(arules)
+Titanic<-read.csv("/Volumes/Data/Course Content/DS content/A.Rules/Titanic.csv")((Titanic<-Titanic[,-c(1)](rules <- apriori(Titanic)(arules::inspect(rules)(rules.sorted <- sort(rules, by="lift")(arules::inspect(rules.sorted)((# rules with rhs containing "Survived" only(rules <- apriori(Titanic,parameter = list(supp=0.1, conf=0.5)
+#Association Rules
+install.packages("arules")
+library(arules)
+Titanic<-read.csv("/Volumes/Data/Course Content/DS content/A.Rules/Titanic.csv")((Titanic<-Titanic[,-c(1)](rules <- apriori(Titanic)(arules::inspect(rules)(rules.sorted <- sort(rules, by="lift")(arules::inspect(rules.sorted)((# rules with rhs containing "Survived" only(                 ),control = list(verbose=F))(arules::inspect(rules))
